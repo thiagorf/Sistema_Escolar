@@ -1,0 +1,13 @@
+ .remenber {
+    width: 92%;
+    margin: auto;
+}
+
+.checkbox {
+    font-size: .75em;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+}

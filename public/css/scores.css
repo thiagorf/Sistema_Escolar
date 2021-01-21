@@ -1,0 +1,51 @@
+.footer {position: absolute;}
+
+ul {
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.box {
+    align-self: center; 
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 85%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.07em;
+    border-bottom: 1px solid black;
+}
+
+h4, ul li {
+    font-size: .85em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form label {
+    font-size: .85em;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 50%;
+    margin: 3px 0;
+}
+
+form input[type="submit"] {
+    width: 25%;
+}
+
+@media screen and (min-width: 481px) {
+    .box {
+        width: 400px;
+    }
+}

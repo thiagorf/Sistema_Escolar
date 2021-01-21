@@ -1,0 +1,79 @@
+
+
+.score-card {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 70%;
+}
+
+.score-card h3 {
+    align-self: center;
+    font-size: 2.3em;
+    line-height: 1;
+    
+}
+
+.xd {
+    align-self: center;
+    
+}
+
+.s {
+    display: flex;
+    flex-direction: column;
+}
+
+.sc-n {
+    display: none;
+}
+
+.n {
+    display: block;
+}
+
+.sc-s {
+    display: flex;
+    flex-direction: column; 
+}
+
+table {
+    border-collapse: collapse;
+    empty-cells: show;
+    width: 630px;
+}
+
+td,th {
+    
+    text-align: center;
+    width: 125px;
+}
+
+td a {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+tr {
+    border: 1px solid black;
+    display: block;
+    width: inherit;
+}
+
+tbody tr:nth-child(1n) {
+    border-top: none;
+    
+}
+
+@media screen and (min-width: 481px){
+    .s {
+        margin: 5px;
+        
+    }
+    
+    .score-card div {
+        align-items: center;
+        
+    }
+}

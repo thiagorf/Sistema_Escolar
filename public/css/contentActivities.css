@@ -1,0 +1,140 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.card {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 376px;
+    height: 181px;
+    background: #EEF0F1;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.header  {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    width: 270.73px;
+    height: 80%;
+    position: relative;
+    align-items: center;
+    overflow: auto;
+    
+}
+
+.card span {
+    width: 20px;
+    height: 40px;
+    position: absolute; 
+    z-index: 60;
+    top: 4px;
+    right: 7px;
+}
+
+
+
+.header p {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;  
+}
+
+.card .header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+}
+
+.card h3 {
+    font-size: 2em;
+    border-bottom: 1px solid;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: 1;
+    overflow: hidden
+}
+
+.card h3 {
+    align-self: center;
+}
+
+.resources {
+    height: 20%; 
+    align-self: flex-end;
+    display: flex;
+    margin: 0 3px 3px 0;
+}
+
+.resources a {
+    font-size: 0.8em;
+    border-radius: 12px;
+    padding: 5px;
+    background: #C1BBBB;
+}
+
+.resources a:nth-child(1n) {
+    margin: 2px;
+}
+
+.crt {
+   
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.crt a {
+    padding: 4px;
+}
+
+.crt a:last-child {
+    margin-right: 12px;
+}
+
+.crud {
+    display: none;
+}
+
+.crud-s {
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid black;
+    background: #1b1b1b;
+    z-index: 50;
+    right: 4px;
+    top: 20px;
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.crud-s a {
+    font-weight: 600;
+    margin: 4px 4px 0 12px;
+    color: white;
+}
+
+@media screen and (min-width: 481px){
+     .wrapper {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+        
+    } 
+}

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background: #FFF;
+   
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100%;
+    width: 100%;
+    padding-bottom: 59px;
+}
+
+
+.menu {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #E4E3E3;  
+    justify-content: space-between;
+}
+
+.dropdown {
+    flex-direction: column;
+    position: absolute;
+    right: 8px;
+    top: 42px;
+    outline: none;
+    background: #1b1b1b;  
+    width: fit-content;
+    padding: 5px;
+    z-index: 6;
+}
+
+
+
+.dropdown::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 86.74%;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid black;
+}
+
+.dropdown a {
+    color: #FFF;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    height: 59px;
+    bottom: 0; 
+    background: #FFF;
+    text-align: center;
+    border-top: 1px solid #E4E3E3;
+}
+
+.footer span {
+    font-size: .95em;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+.show {
+    font-size: 1.20rem;
+    
+}
+
+.aa {
+    vertical-align: bottom;
+    padding: 3px;
+}
+
+button {
+    outline: none;
+    appearance: none;
+    border: 0;
+    background: #FFF;
+    align-self: flex-start;
+    padding-bottom: 0.12px;
+    
+}
+
+.side-bar {
+    margin: auto 0;
+    align-self: center;
+    background: #FFF;
+    
+}
+
+.side-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    border: 1px solid #E4E3E3;
+    background: #FFF;
+    top: 0; 
+    left: 0;
+    z-index: 5;
+    transform: translateX(-100%);
+    transition: transform linear 0.3s;
+}
+
+.x {
+    transform: translateX(0) !important;
+}
+
+.t {
+    align-self: flex-end;
+    padding: 8px 14px 8px 8px;
+}
+
+.side-items a {
+    
+    width: 85%;
+    margin: 10px auto;
+    padding: 8px;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 481px){
+    .container {
+        font-size: calc(16px + (16 - 16) * ((100vw - 400px) / (1200-400)));
+    }
+}

@@ -1,0 +1,98 @@
+.footer {
+    position: absolute;
+}
+
+.box {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    background: #EEF0F1;
+    border-radius: 12px;
+    padding: 5px;
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+}
+
+.tt {
+    resize: none;
+}
+
+.error {
+    align-self: center;
+    width: fit-content;
+    color: crimson;
+}
+
+form  {
+    display: flex;
+    flex-direction: column;
+}
+
+form h3 {
+    align-self: center;
+}
+
+h3 {
+    padding: 5px;
+    font-size: 1.75em;
+}
+
+input[type='submit'] {
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 22px;
+    padding: 3px 4px;
+    border: 0;
+    border-radius: 12px;
+    background: #C1BBBB;
+}
+
+.field,.field-select {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.field input[type="text"], 
+.field input[type="email"], 
+.field input[type="password"], 
+.field input[type="number"] {
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid black;    
+}
+
+.field input[type="file"] {
+    display: none;
+}
+
+.field label[for="file"] {
+    width: fit-content;
+    padding-top: 3px;
+    margin-top: 5px;
+    font-size: .75em;
+}
+
+.field i {
+    vertical-align: middle;
+}
+
+
+.field-select {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-select select {
+    width: 185.55px;
+    outline: none;
+}
+
+@media screen and (min-width: 481px) {
+    .box {
+        width: 400px;
+    }
+}

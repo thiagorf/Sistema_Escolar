@@ -1,0 +1,137 @@
+.footer {
+    position: absolute;
+}
+
+.card {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 66.66%;
+}
+
+.card h3 {
+    font-size: 2.07em;
+    border-bottom: 1px solid black;
+}
+.card .header p {
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+} 
+.header  {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    
+    width: 270.73px;
+    align-items: center;
+    overflow: auto;
+}
+
+.header span {
+    word-break: break-all;
+}
+
+.activities {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 271px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.activities a {font-weight: 700;}
+
+.activities p, .activities a {
+    font-size: .75em;
+}
+
+.aln {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 270.73px;
+    font-size: .75em;
+}
+.aln-n {display: none;}
+
+.aln-s {
+    display: flex;
+    flex-direction: column;
+    padding-top:3px;
+}
+
+.aln-s p span {font-weight: 500;}
+
+.aln-s a span {font-weight: 700;}
+
+.activities-s {
+    display: flex !important;
+    flex-direction: column;
+}
+.activities-n {display: none;}
+
+.frm {
+    font-size: .75em;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.coments {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    position: relative;
+}
+
+button[type="submit"] {
+    margin-left: 10px;
+}
+
+.coments p {
+    font-size: .75em;
+    font-weight: 300;
+    padding: 2px;
+}
+
+form {
+    display: flex;
+}
+
+.coments form {
+    padding: 5px;
+}
+
+
+@media screen and (min-width: 481px) {
+
+    .coments {
+        width: 60vw;
+        align-items: flex-start;
+    }
+
+    .coments span {
+        align-self: center;
+    }
+    
+    form, input[type="text"] {
+        align-self: center;
+        width: 40vw;
+        
+    }
+    
+    .header, .activities, .aln {
+        width: 60vw
+    }
+    
+}

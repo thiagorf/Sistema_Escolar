@@ -1,0 +1,106 @@
+body {
+    background: #EEF0F1;
+}
+
+.footer {
+    position: absolute;
+}
+
+.box {
+    align-self: center;
+    background: #FFF;
+    width: 88%;
+    margin-top: 40px;
+}
+
+.error {
+    align-self: center;
+    width: fit-content;
+    color: crimson;
+}
+
+.efe {
+    display: flex;
+    flex-direction: column;
+   
+    
+    
+}
+.inp {
+    margin: 10px auto;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 92%;
+}
+
+.animation {
+   width: 92%;
+   margin: auto;
+}
+
+form h3 {
+    width: 92%;
+    margin: 8px auto 1em auto;
+    font-size: 2em;
+    line-height: 48px;
+    
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    border: 1px solid black;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: #9D9999;
+    outline: none;
+    transition: all 0.5s;
+}
+
+input[type="checkbox"]:checked {
+    background: black;
+}
+
+.check {
+    width: 92%;
+    margin: 36px auto 0 auto;
+}
+.check  button{
+    appearance: none;
+    border: 0;
+    border-bottom: 2px solid black;
+    background: inherit;
+    width: 143px;
+    font-size: 1em;
+    text-align: start;
+}
+
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.cta {
+    font-size: .6em;
+    line-height: 12px;
+}
+
+.cta:last-child {
+    font-weight: bold;
+   
+}
+
+.text {
+    font-weight: 900;
+}
+
+@media screen and (min-width: 481px) {
+    .box {
+        width: 400px;
+    }
+}
