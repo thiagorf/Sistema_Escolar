@@ -8,17 +8,18 @@ Este projeto trata-se de uma referencia de projeto pessoal presente em meu curr�
 
 # Passos a passo
 
-## 1ºclonar projeto
+## 1º Clonar projeto
 
 Na aba principal do projeto procure pelo botão com o nome de ‘code’ em seguida copie o https fornecido.
 Em seguida escolha o local onde você deseja clonar o projeto, nessa pasta utilize o seguinte comando:
+
 `git clone {a chave que você copiou}`
 
-## 2º composer install
+## 2º Composer install
 
 Na mesma pasta em que o projeto foi clonado rode o comando `composer install` para gerar as dependências do arquivo vendor.
 
-## 3º mudar .env.example para .env
+## 3º Mudar .env.example para .env
 
 E em seguida coloque as devidas configurações no arquivo .env.
 
@@ -32,6 +33,6 @@ Rode o comando `php artisan migrate` no terminal do projeto para gerar as tabela
 
 ## 6º Observações
 
-Nota 1º que o projeto utiliza 3 níveis de acesso , Aluno, Professor, Admin ou seja será necessário antes de rodar o projeto no ambiente de desenvolvimento a inserção dessas 3 roles na tabela role.
+> Note que o projeto utiliza 3 níveis de acesso , Aluno, Professor, Admin ou seja será necessário antes de rodar o projeto no ambiente de desenvolvimento a inserção dessas 3 roles na tabela role.
 
-Nota 2º que para definir o nível de acesso “Admin” a um usuário, terá que ser alterado manualmente a pivot table relativa `role_user` no sgbd preferencial.
+> Para definir o nível de acesso “Admin” a um usuário, terá que ser alterado manualmente a pivot table relativa `role_user` no sgbd preferencial.
